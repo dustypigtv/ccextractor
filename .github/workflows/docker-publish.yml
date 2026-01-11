@@ -63,6 +63,6 @@ jobs:
         with:
           context: "{{defaultContext}}:docker"
           push: true
-          tags: latest
+          tags: ghcr.io/dustypigtv/ccextractor:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
