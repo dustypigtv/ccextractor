@@ -1,3 +1,11 @@
+```
+# CCExtractor source
+FROM ghcr.io/dustypigtv/ccextractor:latest AS ccextractor_src
+
+COPY --from=ccextractor_src /xfiles/lib /lib
+COPY --from=ccextractor_src /xfiles/usr /usr
+```
+
 <img src ="https://github.com/CCExtractor/ccextractor-org-media/blob/master/static/ccx_logo_transparent_800x600.png" width="200px" alt="logo" />
 
 # CCExtractor
